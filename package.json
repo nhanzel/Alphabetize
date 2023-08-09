@@ -1,13 +1,16 @@
 {
   "name": "alphabetize",
   "displayName": "Alphabetize",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Alphabetize any selected text, and automatically sort css files.",
+  "version": "1.0.0",
+  "icon": "assets/logo.png",
+  "publisher": "nathan-hanzel",
+  "author": "Nathan Hanzel",
   "engines": {
     "vscode": "^1.81.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "activationEvents": [
     "onStartupFinished",
@@ -20,20 +23,20 @@
         "type": "object",
         "title": "Alphabetize",
         "properties": {
-          "alphabetize.enableSortCssOnSave": {
+          "alphabetize.sortCssOnSave": {
             "type": "boolean",
-            "default": false,
-            "description": "Automatically sort any CSS files that get saved by selector."
+            "default": true,
+            "description": "Sort a css file by selector upon 'Save'."
           },
           "alphabetize.enableGlobalCssSort": {
             "type": "boolean",
-            "default": false,
-            "description": "Sort all CSS files in the workspace when 'Save All' is triggered"
+            "default": true,
+            "description": "Sort all unsaved CSS files in the workspace by selector upon 'Save All'."
           },
-          "alphabetize.enableSortProperties": {
+          "alphabetize.sortCssProperties": {
             "type": "boolean",
-            "default": false,
-            "description": "Sort properties within each selector when CSS file is sorted."
+            "default": true,
+            "description": "Sort properties within each css selector."
           }
         }
       }

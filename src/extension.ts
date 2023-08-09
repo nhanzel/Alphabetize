@@ -107,7 +107,7 @@ export function activate(context: vscode.ExtensionContext) {
     if (!selectedText) { return; }
 
 	const config = vscode.workspace.getConfiguration('alphabetize');
-	const sortedLines = alphabetizeCSSBySelector(selectedText, config.get('enableSortProperties') as boolean);
+	const sortedLines = alphabetizeCSSBySelector(selectedText, config.get('sortCssProperties') as boolean);
 
 	//reinsert all special characters and comments
 	specialCharStore.sort();
@@ -148,7 +148,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const config = vscode.workspace.getConfiguration('alphabetize');
 
-	if (!config.get('enableSortCssOnSave') as boolean) {
+	if (!config.get('sortCssOnSave') as boolean) {
 		return;
 	}
 
