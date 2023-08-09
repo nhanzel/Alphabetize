@@ -5,6 +5,8 @@
   "version": "1.0.0",
   "icon": "assets/logo.png",
   "publisher": "nathan-hanzel",
+  "license": "MIT",
+  "repository": "https://github.com/nhanzel/Alphabetize",
   "author": "Nathan Hanzel",
   "engines": {
     "vscode": "^1.81.0"
