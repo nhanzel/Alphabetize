@@ -1,6 +1,6 @@
 {
-  "name": "alphabetize",
-  "displayName": "Alphabetize",
+  "name": "alphabetized",
+  "displayName": "Alphabetized",
   "description": "Alphabetize any selected text, and automatically sort css files.",
   "version": "1.0.0",
   "icon": "assets/logo.png",
